@@ -1,4 +1,4 @@
-# run-buddy-web
+# Run-Buddy-web
 
 ## Purpose
 A website that offers fitness training services.
