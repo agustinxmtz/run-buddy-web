@@ -51,6 +51,8 @@ header nav ul li a {
 
 /* HEADER / NAVBAR STYLES END */
 
+/*FOOTER STYLES START */
+
 footer {
     background: #fce138;
     padding: 40px 35px;
@@ -283,6 +285,63 @@ section {
     font-size: 17px;
 }
 
+/* TRAINER STYLES END */
+
+/* SERVICE STYLES BEGIN */
+
+.services {
+    background: #fce138;
+}
+
+.service-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.service-grid-container {
+    background: lightyellow;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 4fr);
+    grid-template-rows: repeat(5, 1fr) 2fr;
+    border: 2px solid #024e76;
+    color: #024e76;
+    font-size: 1.2rem;
+  }
+
+.service-grid-item {
+      padding: 15px 0;
+      border: 2px solid #024e76;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+.service-grid-item.basic {
+      grid-column: 2 / span 1;
+  }
+
+.service-grid-item.both {
+      grid-column: 2 / span 2;
+  }
+
+.service-grid-item.cancel {
+      writing-mode: vertical-lr;
+      grid-row: 1 / -1;
+      grid-row: 1 / -1;
+      transform: rotate(180deg);
+  }
+
+.grid-head, .grid-price, .service-grid-item.cancel {
+      font-size: 1.5rem;
+      font-weight: bold;
+  }
+
+/* SERVICE STYLES END */
+
+
 /* Reach Out Section */
 .contact {
     background: #024e76;
@@ -351,57 +410,7 @@ section {
 
 /* REACH OUT STYLES END*/
 
-/* SERVICE STYLES BEGIN */
-
-.services {
-    background: #fce138;
-}
-
-.service-grid-wrapper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.service-grid-container {
-    background: lightyellow;
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 4fr);
-    grid-template-rows: repeat(5, 1fr) 2fr;
-    border: 2px solid #024e76;
-    color: #024e76;
-    font-size: 1.2rem;
-  }
-
-  .service-grid-item {
-      padding: 15px 0;
-      border: 2px solid #024e76;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-  }
-
-  .service-grid-item.basic {
-      grid-column: 2 / span 1;
-  }
-
-  .service-grid-item.both {
-      grid-column: 2 / span 2;
-  }
-
-  .service-grid-item.cancel {
-      writing-mode: vertical-lr;
-      grid-row: 1 / -1;
-      grid-row: 1 / -1;
-      transform: rotate(180deg);
-  }
-
-  .grid-head, .grid-price, .service-grid-item.cancel {
-      font-size: 1.5rem;
-      font-weight: bold;
-  }
+/* UTILITIES */
 
 .text-left {
     text-align: left;
@@ -543,6 +552,6 @@ section {
     .contact-form {
         order: 3;
     }
-
+}
 
 
