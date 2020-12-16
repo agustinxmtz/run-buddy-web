@@ -23,8 +23,8 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
@@ -34,10 +34,10 @@ header {
 }
 
 header h1 {
-    font-weight: bold;
+    font-weight: bold; 
+    margin: 0;
     font-size: 36px;
     color: var(--primary-color);
-    margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -79,10 +79,10 @@ header nav ul li a:hover {
 footer {
     background: var(--primary-color);
     padding: 40px 35px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 footer h2 {
@@ -113,32 +113,12 @@ section {
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-}
-
-.hero-form {
-    border: 3px solid var(--secondary-color);
-    background-color: rgba(252, 225, 56, 0.8);
-    padding: 20px;
-    color: var(--secondary-color);
-    width: 40%;
-    margin: 3.5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-}
-
-.hero-form h3 {
-    font-size: 24px;
-    margin: 0;
-}
-
-.hero-form p {
-    margin: 5px 0 15px 0px;
+    background-attachment: fixed;
+    background-position: 80%; 
 }
 
 .hero-cta {
@@ -155,6 +135,30 @@ section {
     font-size: 55px;
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+.hero-form {
+    border: 3px solid var(--secondary-color);
+    background-color: rgba(252, 225, 56, 0.8);
+    padding: 20px;
+    color: var(--secondary-color);
+    width: 40%;
+    margin: 3.5%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-form button:hover {
+    background: var(--tertiary-color);
+}
+
+.hero-form h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.hero-form p {
+    margin: 5px 0 15px 0px;
 }
 
 .form-input {
@@ -185,11 +189,6 @@ section {
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 10px;
-}
-
-.hero-form button:hover {
-    color: var(--primary-color);
-    background: var(--tertiary-color);
 }
 
 .checkbox-wrapper input, .radio-wrapper input {
@@ -242,14 +241,15 @@ section {
     transform: rotate(-58deg);
 }
 
-.checkbox-wrapper input + label::after, .radio-wrapper input + label::after {
+.checkbox-wrapper input + label::after, 
+.radio-wrapper input + label::after {
     content: none;
 }
 
-.checkbox-wrapper input:checked + label::after, .radio-wrapper input:checked + label::after {
+.checkbox-wrapper input:checked + label::after, 
+.radio-wrapper input:checked + label::after {
     content: "";
 }
-
 
 /* HERO STYLES END */
 
@@ -257,8 +257,8 @@ section {
 /* SECTION TITLE STYLES START */
 .section-title {
     font-size: 48px;
-    color: var(--secondary-color);
     border-bottom: 3px solid;
+    color: var(--secondary-color);
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
@@ -313,26 +313,11 @@ section {
     flex: 1 30%;
 }
 
-.step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: var(--secondary-color);
-}
-
 .step-info {
     flex: 2 70%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.step-text p {
-    color: var(--tertiary-color);
-    font-size: 18px;
-}
-
-.step-text {
-    flex: 12;
 }
 
 .step-img {
@@ -344,9 +329,24 @@ section {
     max-width: 100%;
 }
 
-/* Hero Style End */
+.step-text {
+    flex: 12;
+}
 
-/* Meet The Trainers Style */
+.step-text p {
+    color: var(--tertiary-color);
+    font-size: 18px;
+}
+
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: var(--secondary-color);
+}
+
+/* WHAT YOU DO STYLE ENDS */
+
+/* MEET THE TRAINERS START */
 .trainers {
     width: 100%;
     margin: 0 auto;
@@ -356,10 +356,10 @@ section {
 }
 
 .trainer {
-    margin: 0 auto 20px auto;
+    margin: 20px;
+    flex: 1;
     background: var(--secondary-color);
     color: var(--primary-color);
-    flex: 1;
 }
 
 .trainer img {
@@ -430,7 +430,7 @@ section {
 
 .service-grid-item.cancel {
       writing-mode: vertical-lr;
-      grid-row: 1 / -1;
+      grid-column: 1;
       grid-row: 1 / -1;
       transform: rotate(180deg);
   }
@@ -448,20 +448,19 @@ section {
     background: var(--secondary-color);
 }
 
-.contact-info > * {
-    flex: 1;
-    margin: 15px;
-}
-
 .contact h2 {
     color: var(--primary-color);
-    
 }
 
 .contact-info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
 }
 
 .contact-info iframe {
@@ -475,6 +474,13 @@ section {
 .contact-info h3 {
     color: var(--primary-color);
     font-size: 32px;
+}
+
+.contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
 }
 
 .contact-form input, .contact-form textarea {
@@ -510,13 +516,6 @@ section {
 .contact-form button:hover {
     color: var(--primary-color);
     background: var(--tertiary-color);
-}
-
-.contact-info p, .contact-info address {
-    margin: 20px 0;
-    line-height: 1.5;
-    font-size: 16px;
-    font-style: normal;
 }
 
 .contact-info a {
