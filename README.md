@@ -13,4 +13,4 @@ https://agustinxmtz.github.io/run-buddy-web/
 ## Contribution
 Made with ❤️ by Agustin Martinez
 
-### ©️2020 Run Buddy, Inc 
+### ©️2021 Run Buddy, Inc 
