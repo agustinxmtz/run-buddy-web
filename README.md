@@ -11,6 +11,6 @@ A website that offers fitness training services.
 https://agustinxmtz.github.io/run-buddy-web/
 
 ## Contribution
-Made with ❤️ by [your name]
+Made with ❤️ by Agustin Martinez
 
-### ©️2019 Run Buddy, Inc 
+### ©️2020 Run Buddy, Inc 
